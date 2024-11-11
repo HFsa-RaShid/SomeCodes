@@ -28,7 +28,9 @@ db.collection.find({ age: { $nin: [20, 25, 30] } });
 db.collection.find({ $and: [{ age: { $gte: 25 } }, { city: "New York" }] });
 
 // OR
+```
 db.collection.find({ $or: [{ age: { $gte: 25 } }, { city: "New York" }] });
+```
 
 // NOT
 db.collection.find({ age: { $not: { $gte: 25 } } });
